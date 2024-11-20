@@ -3,7 +3,11 @@ const dotenv = require('dotenv');
 
 //Load env vars;
 
+// dev branch code 
+
 dotenv.config({ path: './config/config.env'});
+
+console.log("Dev brach created..")
 
 const PORT = process.env.PORT || 5002;
 
