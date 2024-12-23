@@ -90,7 +90,7 @@ exports.getBootcampByID = async (req, res, next) => {
     res.status(200).json({ success: true, data: bootcamp });
   } catch (error) {
     next(
-      new ErrorResponse(`No Bootcamp found with this id${req.params.id}`, 500)
+      new ErrorResponse(`No Bootcamp found with this id${req.params.id}`, 404)
     );
     // return res.status(400).json({ success: false, error: error.message });
   }
